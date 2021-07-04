@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bernardo Torres, Web Designer & Developer</title>
+  <link rel="shortcut icon" href="/dist/img/shield.png" type="image/x-icon">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="/dist/css/styles.css">
+
+  <!-- DEPENDENCIES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- SCRIPTS -->
+  <script src="/dist/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <nav id="navbar" class="flex justify-between items-center">
+      <a href="#" class="img-logo flex items-center">
+        <img src="/dist/img/shield.png" alt="Logo" class="img-fluid">
+      </a>
+      <i class="fas fa-bars" id="hamburguer"></i>
+      <ul class="flex">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="mobileMenu">
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section flex items-center justify-center flex-col">
+      <h2>Hi, I'm Bernardo Torres and I'm a</h2>
+      <h1>Web Designer & Developer</h1>
+      <div>
+        <a href="#portfolio" class="btn btn-primary flex justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <span>See my work</span>
+        </a>
+      </div>
+    </section>
+    <!-- END HERO -->
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h3 class="section-title">what people say about my work<span>.</span></h3>
+      <div class="section" id="testimonials__list">
+        <a href="" class="testimonial" data-aos="fade-down" data-aos-delay="550">
+          <div class="testimonial__header flex items-center">
+            <div class="testimonial__img">
+              <img src="https://www.xatalweb.com/static/assets/img/testimonials/jorge.jpg" alt="Jorge Torres">
+            </div>
+            <div>
+              <span class="block testimonial__author">Jorge Torres</span>
+              <span class="block testimonial__role">Chevrolet Salesman</span>
+            </div>
+          </div>
+          <div class="testimonial__text">
+            The website helped me get know better by my clients, make it easier to navigate through a responsive
+            website. Even tho Chevrolet has a corporate website, in mine the clients a 101 service.
+          </div>
+        </a>
+
+        <a href="" class="testimonial" data-aos="fade-down" data-aos-delay="700">
+          <div class="testimonial__header flex items-center">
+            <div class="testimonial__img">
+              <img src="https://www.xatalweb.com/static/assets/img/testimonials/default.svg" alt="Hipocampus Logo">
+            </div>
+            <div>
+              <span class="block testimonial__author">Luis Vera</span>
+              <span class="block testimonial__role">Hipocampus Owner</span>
+            </div>
+          </div>
+          <div class="testimonial__text">
+            We needed a website to give clients more information about our business, since our Facebook page wasn't
+            enough. We got the website in less than a week. Totally worth it.
+          </div>
+        </a>
+
+        <a href="" class="testimonial" data-aos="fade-down" data-aos-delay="900">
+          <div class="testimonial__header flex items-center">
+            <div class="testimonial__img">
+              <img src="https://www.xatalweb.com/static/assets/img/testimonials/logo.png" alt="Vintage Rock Band Logo">
+            </div>
+            <div>
+              <span class="block testimonial__author">Vintage</span>
+              <span class="block testimonial__role">Rock Band</span>
+            </div>
+          </div>
+          <div class="testimonial__text">
+            We had lots of doudbts about getting a website, luckily we got a lot of help all the time and we receive a
+            website with a great design at a fair price.
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- END TESTIMONIALS -->
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <h3 class="section-title">portfolio<span>.</span></h3>
+      <div id="portfolio__list">
+        <a href="">
+          <div class="project flex" data-aos="fade-right" data-aos-delay="550">
+            <div class="project__text">
+              <h4 class="project__title">Rock Band Website</h4>
+              <div class="project__description">
+                Website for a Rock Band based in Tlaxacala, México.
+                <br><br>
+                It shows all the information about the band, their
+                members and future shows,
+                therefore, it works as a promotional website and reinforces their brand.
+              </div>
+              <div class="project__cta flex">
+                <a href="https://grupovintage.tk/" target="_blank"
+                  class="btn btn-primary flex items-center justify-center link">
+                  <i class="fas fa-play-circle"></i>
+                  <span>Go to site</span>
+                </a>
+                <a href="#" class="btn btn-outline-primary flex items-center justify-center link">
+                  <i class="fas fa-info-circle"></i>
+                  <span>More info</span>
+                </a>
+              </div>
+
+            </div>
+            <a href="https://grupovintage.tk/" class="project__img" target="_blank">
+              <img src="https://www.xatalweb.com/static/assets/img/portfolio/vintage.png" alt="project image">
+            </a>
+          </div>
+
+          <div class="project flex" data-aos="fade-left" data-aos-delay="550">
+            <div class="project__text">
+              <h4 class="project__title">Salesman Landing Page</h4>
+              <div class="project__description">
+                Personal website for a Chevrolet Salesman. It gives a better experience to his customers.
+                <br><br>
+                The website stablishes more professionalism and most importantly: it attracts more clients
+                through
+                Google searches.
+              </div>
+              <div class="project__cta flex">
+                <a href="https://chevroletjorge.tk/" target="_blank"
+                  class="btn btn-primary flex items-center justify-center link">
+                  <i class="fas fa-play-circle"></i>
+                  <span>Go to site</span>
+                </a>
+                <a href="#" class="btn btn-outline-primary flex items-center justify-center link">
+                  <i class="fas fa-info-circle"></i>
+                  <span>More info</span>
+                </a>
+              </div>
+
+            </div>
+            <a href="https://chevroletjorge.tk/" target="_blank" class="project__img">
+              <img src="https://www.xatalweb.com/static/assets/img/portfolio/chevrolet.png" alt="project image">
+            </a>
+          </div>
+
+          <div class="project flex" data-aos="fade-right" data-aos-delay="550">
+            <div class="project__text">
+              <h4 class="project__title">Event Hall Corporate Website</h4>
+              <div class="project__description">
+                Website for Hipocampus, an event hall located in Veracruz, México.
+                <br><br>
+                The website helps future clients
+                in getting more information about the business and it stablishes more professionalism.
+              </div>
+              <div class="project__cta flex">
+                <a href="https://hipocampus.tk/" target="_blank"
+                  class="btn btn-primary flex items-center justify-center link">
+                  <i class="fas fa-play-circle"></i>
+                  <span>Go to site</span>
+                </a>
+                <a href="#" class="btn btn-outline-primary flex items-center justify-center link">
+                  <i class="fas fa-info-circle"></i>
+                  <span>More info</span>
+                </a>
+              </div>
+            </div>
+            <a href="https://hipocampus.tk/" target="_blank" class="project__img">
+              <img src="https://www.xatalweb.com/static/assets/img/portfolio/hipocampus.png" alt="project image">
+            </a>
+          </div>
+
+          <div class="project flex" data-aos="fade-left" data-aos-delay="550">
+            <div class="project__text">
+              <h4 class="project__title">Pet Rescue Corporate Website</h4>
+              <div class="project__description">
+                "Amigos de los Animales" is an ONG focused on pet rescue and responsible adoption. The website helps
+                giving more information about the ONG.
+                <br /><br />
+                I made this website for free since I love animals and wanted to help them.
+              </div>
+              <div class="project__cta flex">
+                <a href="https://amigosac.ml" target="_blank"
+                  class="btn btn-primary flex items-center justify-center link">
+                  <i class="fas fa-play-circle"></i>
+                  <span>Go to site</span>
+                </a>
+                <a href="#" class="btn btn-outline-primary flex items-center justify-center link">
+                  <i class="fas fa-info-circle"></i>
+                  <span>More info</span>
+                </a>
+              </div>
+            </div>
+            <a href="https://amigosac.ml" target="_blank" class="project__img">
+              <img src="/dist/img/amigos.png" alt="project image">
+            </a>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- END PORTFOLIO -->
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h3 class="section-title">services<span>.</span></h3>
+      <p id="services__description">
+        These are my main services but I could do more stuff on web design & web development, like e-commerce, work on
+        web
+        apps and more.
+      </p>
+      <div id="services__list">
+        <div class="service" data-aos="flip-left" data-aos-delay="550">
+          <div class="service__img">
+            <img src="/dist/img/landing-page.jpg" alt="E-commerce" class="img-fluid">
+          </div>
+          <div class="service__text">
+            <h3 class="service__title">Landing pages</h3>
+            <div class="service__description">
+              Responsive website focused on a campaign to get more clients or to show your product/service and SEO
+              optimized.
+            </div>
+          </div>
+        </div>
+
+        <div class="service" data-aos="flip-left" data-aos-delay="550">
+          <div class="service__img">
+            <img src="/dist/img/web-design.jpg" alt="Web design" class="img-fluid">
+          </div>
+          <div class="service__text">
+            <h3 class="service__title">Web Design</h3>
+            <div class="service__description">
+              Design from scratch or implement your design for a responsive website using Wordpress or code, depending
+              on your needs.
+            </div>
+          </div>
+        </div>
+
+        <div class="service" data-aos="flip-left" data-aos-delay="550">
+          <div class="service__img">
+            <img src="/dist/img/portfolio.jpg" alt="Web development" class="img-fluid">
+          </div>
+          <div class="service__text">
+            <h3 class="service__title">Portfolios</h3>
+            <div class="service__description">
+              Every creative people needs a website to show their work to get more clients or get hired.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section">
+        <h3 class="section-title">about<span>.</span></h3>
+        <div id="about__content" class="flex">
+          <div id="about__img" data-aos="fade-down-right" data-aos-delay="550">
+            <img src="/dist/img/selfie.jpg" alt="Bernardo Torres Selfie" class="img-fluid">
+          </div>
+          <div id="about__text" data-aos="fade-up-left" data-aos-delay="550">
+            I'm Bernardo Torres, a Software Engineering student from México. I love to create stuff, art, specially
+            music, and animals.
+            <br><br>
+            I'm currently building a local web design & development agency named <a href="https://xatalweb.com"
+              id="xatal">Xatal</a>, in my city (Xalapa, México).
+            <br><br>
+            My main technologies for web design and development are Bootstrap, Tailwind CSS, Wordpress, Django, Vue
+            JS and Figma, but I'm constantly learning new things to improve.
+            <br><br>
+            My work ethic is to be 100% honest and I always try to give the best I can. As a software engineering
+            student, I try to provide solutions based on the client needs.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h3 class="section-title">contact<span>.</span></h3>
+      <div id="contact__content">
+        <form>
+          <div class="control-form">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+          </div>
+          <div class="control-form">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+          </div>
+          <div class="control-form">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject">
+          </div>
+          <div class="control-form">
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+        <div id="contact__links">
+          <a href="https://twitter.com/pallascodes" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.youtube.com/channel/UCtBmWZ_ZJo9WGxSpgSv64VQ" target="_blank"><i
+              class="fab fa-youtube-square"></i></a>
+          <a href="https://www.behance.net/bernardotorres4/" target="_blank"><i class="fab fa-behance-square"></i></a>
+          <a href="mailto:bernardotorresmedina@gmail.com"><i class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="section">
+        Bernardo Torres, Web Designer & Developer | bernardotorresmedina@gmail.com
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </main>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

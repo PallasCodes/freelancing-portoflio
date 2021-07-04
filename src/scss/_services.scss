@@ -1,0 +1,47 @@
+#services {
+  padding-bottom: 6rem;
+  
+  @include breakpoint(sm) {
+    padding-bottom: 4rem;
+  }
+  
+  &__description {
+    padding-bottom: 1.5rem;
+    margin-top: -0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+    gap: 2rem;
+
+    .service {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 0.25rem;
+      overflow_: hidden;
+
+      @include breakpoint(sm) {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      
+      &__text {
+        padding: 0.75rem;
+      }
+
+      &__title {
+        margin: 0.35rem 0;
+        font-size: 1.1em;
+      }
+
+      &__img {
+        max-height: 12rem;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

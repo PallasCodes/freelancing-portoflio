@@ -1,0 +1,87 @@
+#portfolio {
+
+  &__list {
+    margin-top: 4rem;
+
+    @include breakpoint(sm) {
+      margin-top: 0;
+    }
+  }
+
+  .project {
+    max-width: 47rem;
+    margin: 3.5rem auto;
+    border-left: 3px solid $primary;
+
+    @include breakpoint(sm) {
+      flex-direction: column-reverse;
+      margin: 2.5rem auto;
+    }
+
+    &:last-child {
+      @include breakpoint(sm) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &:first-of-type {
+      margin-top: 2.5rem;
+    }
+
+    &__text {
+      padding-left: 1rem;
+      flex-basis: 50%;
+    }
+
+    &__img {
+      flex-basis: 50%;
+      max-height: 100%;
+      margin-left: 1rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(sm) {
+        max-width: 100%;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+        transition: all 300ms ease-in-out;
+        overflow-y: hidden;
+
+        &:hover {
+          transform: scale(1.125);
+        }
+      }
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
+
+      @include breakpoint(sm) {
+        margin-top: 1rem;
+      }
+    }
+
+    &__cta {
+      margin-top: 0.5rem;
+
+      .link {
+        font-size: $text-sm;
+
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+
+       i {
+         margin-right: 0.25rem;
+       }
+      }
+    }
+  }
+}
