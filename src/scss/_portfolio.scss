@@ -62,6 +62,7 @@
       margin: 0;
       margin-bottom: 0.5rem;
       font-size: 1.125rem;
+      letter-spacing: 0.75px;
 
       @include breakpoint(sm) {
         margin-top: 1rem;
