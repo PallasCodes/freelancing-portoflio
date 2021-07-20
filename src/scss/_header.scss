@@ -17,9 +17,27 @@
   margin: 0 auto;
   padding: 0.3rem 0.75rem;
   transition: all 300ms ease-in-out;
+  flex-wrap: wrap;
 
   .img-logo {
     width: 2.25rem;
+  }
+
+  #menu.active {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: rgba($white, 0.8);
+    top: 1.58rem;
+    left: 0;
+    padding-top: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1.2px solid #ccc;
+    font-size: 1.25rem;
+
+    li {
+      padding-bottom: 0.75rem;
+    }
   }
 
   #hamburguer {
@@ -67,43 +85,6 @@
           border-bottom: 2px solid $primary;
         }
       }
-    }
-  }
-}
-
-#mobileMenu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: $black;
-  color: $white;
-  opacity: 0;
-  visibility: hidden;
-  font-size: $text-lg;
-  font-weight: 500;
-  
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  ul {
-    list-style-type: none;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1.75rem;
-
-    li:not(:last-child) {
-      margin-bottom: 0.75rem;
-    }
-
-    .btn{
-      width: 100%;
-      display: block;
     }
   }
 }

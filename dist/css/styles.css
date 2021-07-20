@@ -147,10 +147,28 @@ body a {
   margin: 0 auto;
   padding: 0.3rem 0.75rem;
   transition: all 300ms ease-in-out;
+  flex-wrap: wrap;
 }
 
 #navbar .img-logo {
   width: 2.25rem;
+}
+
+#navbar #menu.active {
+  display: block;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 1.58rem;
+  left: 0;
+  padding-top: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.2px solid #ccc;
+  font-size: 1.25rem;
+}
+
+#navbar #menu.active li {
+  padding-bottom: 0.75rem;
 }
 
 #navbar #hamburguer {
@@ -201,43 +219,6 @@ body a {
   border-bottom: 2px solid #06B6D4;
 }
 
-#mobileMenu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #333333;
-  color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-#mobileMenu.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-#mobileMenu ul {
-  list-style-type: none;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 1.75rem;
-}
-
-#mobileMenu ul li:not(:last-child) {
-  margin-bottom: 0.75rem;
-}
-
-#mobileMenu ul .btn {
-  width: 100%;
-  display: block;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -251,7 +232,7 @@ body a {
 }
 
 #hero {
-  padding-bottom: 3rem;
+  padding: 0;
   height: 100vh;
   line-height: 0.75;
   font-family: 'Nunito', sans-serif;
@@ -264,6 +245,23 @@ body a {
   #hero {
     line-height: 1;
   }
+}
+
+#hero #avatar {
+  width: 16rem;
+  margin-bottom: 1rem;
+  margin-top: 4.75rem;
+}
+
+@media (max-width: 768px) {
+  #hero #avatar {
+    width: 12rem;
+    margin-top: 5.5rem;
+  }
+}
+
+#hero #avatar img {
+  border-radius: 50%;
 }
 
 #hero div {
@@ -295,7 +293,7 @@ body a {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: 1rem;
   }
 }
@@ -307,7 +305,7 @@ body a {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 1.25em;
+    font-size: 1.1em;
     margin-bottom: 0.5rem;
   }
 }
@@ -561,14 +559,14 @@ body a {
   margin-right: 1.5rem;
 }
 
+#about__img img {
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   #about__img {
     margin-bottom: 1rem;
   }
-}
-
-#about__img img {
-  box-shadow: 1.5rem 1.5rem #444444;
 }
 
 #contact__links {

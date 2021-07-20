@@ -27,12 +27,12 @@
     max-width: 20rem;
     margin-right: 1.5rem;
 
-    @include breakpoint(sm) {
-      margin-bottom: 1rem;
+    img {
+      border-radius: 50%;
     }
 
-    img {
-      box-shadow: 1.5rem 1.5rem $lightBlack;
+    @include breakpoint(sm) {
+      margin-bottom: 1rem;
     }
   }
 }
