@@ -345,10 +345,10 @@
     <section id="contact" class="section">
       <h3 class="section-title">contact<span>.</span></h3>
       <div id="contact__content">
-        <form>
+        <form action="https://formspree.io/f/xeqvrqly" method="POST" id="form">
           <div class="control-form">
-            <label for="name">Name</label>
-            <input type="text" name="name">
+            <label for="_replyto">Name</label>
+            <input type="text" name="_replyto">
           </div>
           <div class="control-form">
             <label for="email">Email</label>
@@ -363,8 +363,10 @@
             <textarea name="message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send</button>
-
         </form>
+
+        <h4 id="form-status" style="text-align: center;"></h4>
+
         <div id="contact__links">
           <a href="https://twitter.com/pallascodes" target="_blank"><i class="fab fa-twitter-square"></i></a>
           <a href="https://www.youtube.com/channel/UCtBmWZ_ZJo9WGxSpgSv64VQ" target="_blank"><i
@@ -387,6 +389,29 @@
 
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    var form = document.getElementById("form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
   </script>
 </body>
 
